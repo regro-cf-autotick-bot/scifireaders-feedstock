@@ -1,5 +1,5 @@
 {% set name = "SciFiReaders" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fbec0d7c44ac56c2539997b95aacfb6f37d8b63e266df25f140291456c04fa84
+  sha256: 93a18cdf75271a08ffa55b2c4146188deeb5eb2dea88832c0636b77a15f18269
 
 build:
   noarch: python
