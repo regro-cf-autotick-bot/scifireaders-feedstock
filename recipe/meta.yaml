@@ -1,5 +1,5 @@
 {% set name = "SciFiReaders" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 93a18cdf75271a08ffa55b2c4146188deeb5eb2dea88832c0636b77a15f18269
+  sha256: 39e739425f4b52977b0887c8f4cebc22b13265e95f18ad448f0267719502e96e
 
 build:
   noarch: python
@@ -21,12 +21,13 @@ requirements:
     - pytest-runner
   run:
     - python >=3
-    - cytoolz
     - dask-core >=2.20.0
     - numpy >=1.10
-    - sidpy >=0.0.2
-    - six
-    - toolz
+    - sidpy >=0.0.5
+    - arm_pyart
+    - pynsid
+    - numba
+    - finesse
 
 test:
   imports:
