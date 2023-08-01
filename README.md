@@ -1,11 +1,11 @@
-About scifireaders
-==================
+About scifireaders-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scifireaders-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pycroscopy/SciFiReaders
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scifireaders-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for extracting data and metadata from scientific data files
 
