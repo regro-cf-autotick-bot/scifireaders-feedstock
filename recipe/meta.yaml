@@ -1,5 +1,5 @@
 {% set name = "SciFiReaders" %}
-{% set version = "0.0.9" %}
+{% set version = "0.11.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 39e739425f4b52977b0887c8f4cebc22b13265e95f18ad448f0267719502e96e
+  sha256: 92ca179fe8e6f0b18b8514de3e1af000f8698e5e5873dc03e3c3a1ebd140dd6e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -32,7 +32,7 @@ requirements:
 test:
   imports:
     - SciFiReaders
-    
+
 about:
   home: https://github.com/pycroscopy/SciFiReaders
   license: MIT
